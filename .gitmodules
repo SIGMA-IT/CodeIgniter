@@ -1,0 +1,3 @@
+[submodule "system/plugins/tcpdf"]
+	path = system/plugins/tcpdf
+	url = git@github.com:SIGMA-IT/TCPDF-Clone.git
