@@ -148,8 +148,14 @@ class CI_Calendar {
 		// Generate the template data array
 		$this->parse_template();
 	
-		// Begin building the calendar output						
+		// Begin building the calendar output
 		$out = $this->temp['table_open'];
+		$out .= "\n";
+
+                //ayoshimiya - guardo el mes y el año en campos hidden
+                $out .= '<input type="hidden" id="year" value="'.$year.'"/>';
+		$out .= "\n";
+                $out .= '<input type="hidden" id="month" value="'.$month.'"/>';
 		$out .= "\n";	
 
 		$out .= "\n";		
